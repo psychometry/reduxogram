@@ -1,0 +1,58 @@
+.single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.single > div {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 60%;
+          flex: 2 1 60%;
+}
+.single >.comment {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  padding: 0 1em 0 1em;
+}
+.single .comment .comment-box {
+  word-wrap: break-word;
+  overflow: auto;
+}
+.remove-comment{
+  background-color: transparent;
+  border: none;
+  opacity: 0;
+  position: absolute;
+}
+.comment-box:hover .remove-comment{
+  opacity: 1;
+}
+.comment-form{
+  display:flex;
+  flex:1;
+  flex-flow: column;
+  position:relative;
+  align-items:left;
+  justify-content:space-around;
+  padding:.5em;
+}
+.comment-form > div > input[type='text'],.comment-form > div > input[type='textarea']{
+  width:100%;
+  height:2.5em;
+  font-size: 1em;
+  box-shadow:none;
+  border: none;
+  border-bottom:1px solid #00695C;
+}
+.comment-form > div{
+  width:100%;
+}
+.comment-form > div > input[type='text']:focus,.comment-form > input[type='textarea']:focus{
+  outline:none;
+  border-bottom:2px solid green;
+}
+.comment-form > div > label{
+  position:absolute;
+  font-size:0.8em;
+  top:-.7em;
+}

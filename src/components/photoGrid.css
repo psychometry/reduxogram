@@ -1,0 +1,99 @@
+.photo-grid {
+  font-size: 1 em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photo {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: .1em;
+  background-color: white;
+  word-wrap: wrap;
+  padding: 1em;
+  border: 1px solid #00695C;
+  box-shadow: 4px 4px 8px #00695C;
+  position: relative;
+}
+.photo img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 5% 5% 5%;
+  border: 1px solid black;
+}
+.photo figcaption {
+  max-width: 90%;
+  margin: 0 5% 5% 5%;
+  opacity: 0;
+}
+.photo:hover >figcaption{
+  opacity: 1;
+}
+.photo figcaption > .caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  position: absolute;
+  padding: 45% 5% 0 5%;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  background-color: #00695C;
+  opacity: .9;
+
+}
+.photo figcaption > .caption > span{
+  color: white;
+  height: 5em;
+}
+.photo figcaption > .caption > .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  justify-content: space-around;
+  background-color: transparent;
+  opacity: 1;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.photo figcaption > .caption > .control > button, .photo figcaption > .caption > .control a {
+  display: inline-block;
+  background-color: #FFFDE7;
+  border: 1px solid #26A69A;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  color: #1A237E;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0;
+          flex: 1 1 0;
+  height: 3em;
+  padding:1em;
+}
+.photo figcaption > .caption > .control > button:first-child:hover, .photo figcaption > .caption > .control > a:hover{
+  background-color:#00695C;
+  color:white;
+}
+.photo figcaption > .caption > .control > button:first-child, .photo figcaption > .caption > .control a:first-child {
+  margin: 0 1em 0 0;
+}
+.photo figcaption > .caption > .control > button:last-child, .photo figcaption > .caption > .control a:last-child {
+  margin: 0 0 0 1em;
+}

@@ -1,0 +1,16 @@
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+
+.hero > h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+}
+.hero > h1 > a {
+  color: #004D40;
+  text-decoration: none;
+}
